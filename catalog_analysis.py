@@ -63,16 +63,14 @@ def decade_label(year):
         case _:
             return "старые"
 
-        # Этап 3. Циклы
-
-# 1. Выводим фильмы, которые НЕ относятся к comedy
+        
 for movie in movies:
     if "comedy" in movie["genres"]:
         continue
     print(movie["title"])
 
 
-# 2. Ищем первый фильм с рейтингом выше 9.0
+
 i = 0
 
 while i < len(movies):
@@ -84,7 +82,6 @@ else:
     print("Шедевров не найдено")
 
 
-# 3. Считаем количество длинных фильмов
 def count_long_movies(movies, threshold=120):
     count = 0
 
